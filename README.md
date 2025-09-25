@@ -8,12 +8,14 @@ This part of the code read all the files into python form and plot it respective
 
 ## Balloon trace
 **Balloon_class.ipynb**  
+  
 use the gps data to extract the balloon trace, and have the useful function like:     
 search the time period that balloon is within certain radius of certain radius    
 generate the position table based on the start and end time period (used in theory results)  
 
 ## Theory results
 **theory/**  
+  
 generated theorical raytracing result for dt with a given source using radiopropa  
 it have 2 mode:  
 1. given the file array and start and end time to generate theory result by time (take result from balloon trace)  
@@ -26,6 +28,7 @@ note: sphere_sizes_i need to be manually tuned if switched between far away obje
 supported by:   
 **event_v2.py** (signal event process class)  
 **sampler2_0.py** (data reading module)  
+  
 the analyzer read in the whole run of data, make it the format easy to filter, process and write out  
 and provide the optimal method to plot things like, waveform, fft, spectrogram etc  
 note, in this experiment, the method balloon_phase_extracter() is used to extract the phase  
@@ -33,6 +36,7 @@ which is include in Bob's disscertation at: https://biblio.ugent.be/publication/
 
 ## Summary of results
 **Balloon_project_plotter_ver2.0.ipynb**  
+  
 to summarize all the results from all three modules above, a sperate module, plotter is introduced,   
 This read in the specific info from balloon, theory and experiment  
 and allow user to adjust the specific parameter of the plot   
